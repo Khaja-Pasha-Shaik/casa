@@ -29,10 +29,15 @@
       h2 {
         color: #4caf50;
       }
+      ul {
+        padding-left: 20px;
+        line-height: 1.8;
+      }
       table {
         width: 100%;
         border-collapse: collapse;
         margin: 20px 0;
+        table-layout: fixed;
       }
       table,
       th,
@@ -43,6 +48,7 @@
       td {
         padding: 12px;
         text-align: center;
+        word-wrap: break-word;
       }
       th {
         background-color: #4caf50;
@@ -56,13 +62,44 @@
         margin-top: 20px;
       }
       .whatsapp-link {
-        display: inline-block;
-        padding: 10px 15px;
-        background-color: #25d366;
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-        margin-top: 10px;
+        color: #25d366;
+        text-decoration: underline;
+      }
+
+      @media (max-width: 768px) {
+        body {
+          font-size: 16px;
+        }
+        header,
+        footer {
+          padding: 1rem;
+        }
+        section {
+          margin: 10px;
+          padding: 15px;
+        }
+        table,
+        th,
+        td {
+          font-size: 14px;
+          padding: 8px;
+        }
+      }
+      @media (max-width: 480px) {
+        header h1,
+        footer p {
+          font-size: 18px;
+        }
+        section {
+          margin: 5px;
+          padding: 10px;
+        }
+        table,
+        th,
+        td {
+          font-size: 12px;
+          padding: 6px;
+        }
       }
     </style>
   </head>
@@ -80,11 +117,11 @@
           in common areas.
         </li>
         <li>
-          Dishwashing: Dishwashing to be complete by EOD, dont postpone.
-          Discipline is everything
+          Dishwashing: Dishwashing to be completed by EOD, don’t postpone.
+          Discipline is everything.
         </li>
         <li>
-          Not Feeling well: Please transfer your cleaning duties to another
+          Not Feeling Well: Please transfer your cleaning duties to another
           member for that day.
         </li>
         <li>
@@ -152,6 +189,7 @@
           <tr>
             <td>Wednesday</td>
             <td>WFO</td>
+
             <td>WFO</td>
             <td>Individually</td>
           </tr>
@@ -174,7 +212,7 @@
             <td>Individually</td>
           </tr>
           <tr>
-            <td>Sundayday</td>
+            <td>Sunday</td>
             <td>Individually</td>
             <td>Individually</td>
             <td>Individually</td>
@@ -192,10 +230,9 @@
             <thead>
               <tr>
                 <th>Day</th>
-                <th>Common dishwashing</th>
+                <th>Common Dishwashing</th>
                 <th>Sweeping and Mopping</th>
                 <th>Bathroom Cleaning</th>
-                <th></th>
               </tr>
             </thead>
             <tbody>
